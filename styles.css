@@ -1,0 +1,283 @@
+body, html {
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color: #666;
+    
+    scroll-behavior: smooth;
+  
+  }
+  #nav-bar {
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    background-color: rgba(100, 100, 100, 0.5)
+  }
+  .name {
+    padding: 10px;
+    font-family: 'Chakra Petch', sans-serif;
+    font-size: 2rem;
+    font-weight: 200;
+    color: #ffffff;
+  }
+  .f-awesome a {
+      color: rgb(40, 6, 233);
+      text-decoration: none;
+  }
+  .f-awesome a:hover {
+      color: #ffffff;
+      transition-duration: 400ms;
+  }
+  #nav-bar a {
+    color: white;
+    font-family: 'Kanit', sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 10px;
+    transition-duration: 400ms;
+  }
+  #nav-bar a:hover{
+    color: #666;
+  }
+  
+  .top-section {
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-image:url('img/image1.jpeg'), 
+    linear-gradient(rgb(44, 54, 194), firebrick,rgb(30, 121, 57));
+    /* background-color: slategrey; */
+    background-blend-mode: overlay;
+    height: 100vh;
+  }
+
+  .hero-text{
+    align-self: center;
+    text-align: center;
+    margin: 0 auto;
+    color: #ffffff;
+    font-size: 2rem;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+  }
+  span {
+      color: #666;
+  }
+  .under-hero {
+      color: white;
+      font-size: 1rem;
+  }
+  .developer {
+      color: rgb(40, 6, 233);
+      font-size: 2.5rem;
+     font-family: 'Electrolize', sans-serif;
+     font-style: italic;
+     font-weight: 800;
+  }
+  section {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+      background-color: #ffffff;
+      opacity: 1;
+      padding: 20px;
+  }
+  .full img, .landing img, .apps img { 
+      height: 100%;
+      width: 100%;
+      animation-name: showImg;
+    transition-property: img;
+    animation-iteration-count: 1 !important;
+    animation-duration: 200ms;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+  }
+  .full:hover img, .landing:hover img, .apps:hover img{
+    animation-name: showInfo;
+    transition-property: img;
+    animation-iteration-count: 1 !important;
+    animation-duration: 800ms;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    
+  }
+@keyframes showInfo {
+    0%{
+        height: 100%;
+        width: 100%;
+    }
+    100%{
+        height: 0%;
+        width: 0%;
+    }
+}
+@keyframes showImg {
+    0%{
+        height: 0%;
+        width: 0%;
+    }
+    100%{
+        height: 100%;
+        width: 100%;
+    }
+}
+
+    .full-projects,  .landing-pages, .small-apps{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-evenly;
+    height: auto;
+    
+  }
+  .full, .landing, .apps{
+      width: 45%;
+      height: 17rem;
+      overflow: hidden;
+      border: 1px solid black;
+      box-shadow: 5px 10px 8px 10px #888888;
+      border-radius: 5px;
+  }
+  .pro-btn, .reff-btn {
+      font-size: 14px;
+      height: 3rem;
+      border-radius: 15px;
+      color: #ffffff;
+      background-color: rgb(40, 6, 233);
+  }
+  .pro-btn:hover, .reff-btn:hover {
+      background-color: #ffffff;
+      color: rgb(40, 6, 233);
+      transition-duration: 300ms;
+      cursor: pointer;
+  }
+  .reff {
+      padding-top: 10rem;
+      display: flex;
+      flex-direction: column;
+  }
+  .reff-info {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      font-size: 15px;
+  }
+  .person {
+      font-weight: 300;
+      font-size: 25px;
+  }
+
+
+.modal, .modalPatt{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #f4f4f4;
+    margin: 20% auto;
+    width: 70%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 7px 20px 0 rgba(0, 0, 0, 0.2);
+    animation-name: modalopen;
+    animation-duration: 1.5s;
+} 
+.modal-header h2, .modal-footer h3 {
+    margin: 0;
+}
+.modal-header {
+    background: #666;
+    padding: 15px;
+    color: white;
+}
+.modal-body {
+    padding: 10px 20px;
+}
+
+.closeBtn {
+    color: white;
+    float: right;
+    font-size: 30px;
+}
+
+.closeBtn:hover, .closeBtn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes modalopen {
+    from{ opacity: 0;}
+    to{ opacity: 1;}
+}
+
+footer {
+    height: 5vh;
+}
+
+
+
+
+
+
+
+
+
+  @media (min-width: 320px) and (max-width: 767px) {
+    .ptext {
+        font-size: 1rem;
+    }
+    .full-projects,  .landing-pages, .small-apps{
+        display: block;
+        font-size: 0.9rem;
+        align-content: center;
+        margin: 0 auto;
+    }
+    .full, .landing, .apps {
+        width: 100%;
+        height: auto;
+        font-size: 12px;
+    }
+    .name {
+        display: none;
+    }
+    .reff-info {
+        display: flex;
+        flex-direction: column;
+    }
+  }
+  @media (min-width: 80px) and (max-width: 495px) {
+      .ptext {
+          font-size: 1rem;
+      }
+      .full-projects,  .landing-pages, .small-apps{
+          display: block;
+          font-size: 0.9rem;
+          align-content: center;
+          margin: 0 auto;
+      }
+      .full, .landing, .apps {
+          width: 100%;
+          height: auto;
+          font-size: 12px;
+      }
+      .name {
+        display: none;
+    }
+    .reff-info {
+        display: flex;
+        flex-direction: column;
+    }
+  }
