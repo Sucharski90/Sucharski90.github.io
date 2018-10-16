@@ -277,6 +277,16 @@ animation: none !important;
         display: flex;
         flex-direction: column;
     }
+    .modal img, .modalPatt img{
+        display: block;
+        z-index: 1;
+        margin: auto;
+        width: 100%;
+        top: 0;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
   }
   @media (min-width: 80px) and (max-width: 495px) {
       * {
@@ -319,5 +329,15 @@ animation: none !important;
     .reff-info {
         display: flex;
         flex-direction: column;
+    }
+    .modal img, .modalPatt img{
+        display: block;
+        z-index: 1;
+        margin: auto;
+        width: 100%;
+        top: 0;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0, 0, 0, 0.5);
     }
   }
