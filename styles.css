@@ -89,6 +89,12 @@ body, html {
       opacity: 1;
       padding: 20px;
   }
+
+  .about p {
+      margin-top: 5%;
+      margin-bottom: 5%;
+  }
+
   .full img, .landing img, .apps img { 
       height: 100%;
       width: 100%;
