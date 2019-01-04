@@ -241,7 +241,7 @@ footer {
 
 
 
-  @media (min-width: 320px) and (max-width: 767px) {
+  @media (min-width: 320px) and (max-width: 1000px) {
     * {
         /*CSS transitions*/
 -o-transition-property: none !important;
