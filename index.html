@@ -8,8 +8,6 @@
     <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:300,500,600,700|Electrolize" rel="stylesheet">
     <!-- font awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
-    <!-- sal.js -->
-    <link rel="stylesheet" href="./node_modules/sal.js/dist/sal.css">
     <link rel="stylesheet" href="styles.css">
     <title>Matthew Sucharski</title>
 </head>
@@ -71,7 +69,7 @@
 
     <section class="full-projects" >
         <!-- <h2>Full Projects</h2> -->
-                <div class="full" data-sal-duration="1200" data-sal="zoom-in" data-sal-delay="200" data-sal-easing="ease-out-bounce">
+                <div class="full" data-scroll>
                 <img src="img/ilift.jpeg" alt="ilift site">
                 <p> ILift is an app for anyone who wants to get in shape. You can excersise in the gym with weights or at home, it all depends on what you have access too. This was a team project.</p>
                   <p>Tech: Express backend and a React frontend.</p>
@@ -83,7 +81,7 @@
                 </a>
                 </div>
 
-                <div class="full" data-sal-duration="1200" data-sal="zoom-in" data-sal-delay="200" data-sal-easing="ease-out-bounce">
+                <div class="full" data-scroll>
                 <img src="img/doom.jpeg" alt="Doom site">
                 <p>A site created to show some information about the game DOOM created by ID software</p>
                 <p>Tech: React.js</p>
@@ -104,7 +102,7 @@
 
         <section class="landing-pages">
             <!-- <h2>Landing Pages</h2> -->
-            <div class="landing" data-sal-duration="1200" data-sal="zoom-in" data-sal-delay="200" data-sal-easing="ease-out-bounce">
+            <div class="landing" data-scroll>
                 <img src="img/bootstrap.jpeg" alt="Bootstrap landing page">
                 <p>Product landing page created in Bootstrap, click on Try It Now for a modal form to appear and is validated with JavaScript regex.</p>
                 <p>Tech: JavaScript form validation, HTML5, Bootstrap, Font Awesome </p>
@@ -117,7 +115,7 @@
                 
             </div>
 
-            <div class="landing" data-sal-duration="1200" data-sal="zoom-in" data-sal-delay="200" data-sal-easing="ease-out-bounce">
+            <div class="landing" data-scroll>
                 <img src="img/chainz.jpeg" alt="2 chains landing page">
                 <p>My recreation of the 2Chainz site. I am very happy with how it turned out and glad I got the infinate image loop to work.</p>
                 <p>Tech: HTML, CSS Grid and jQuery to create the infinate photo slider.</p>
@@ -139,7 +137,7 @@
             <!-- <h2>Apps</h2> -->
 
 
-            <div class="apps" data-sal-duration="1200" data-sal="zoom-in" data-sal-delay="200" data-sal-easing="ease-out-bounce">
+            <div class="apps" data-scroll>
                 <img src="img/weather.jpeg" alt="Weather application">
                 <p>A weather app created to display the current weather and various conditions in a modal, weather conditions are taken from OpenWeatherMap Api</p>
                 <p>Tech: JavaScript, JQuery (for api call) </p>
@@ -152,7 +150,7 @@
                 </a>
             </div>
 
-            <div class="apps" data-sal-duration="1200" data-sal="zoom-in" data-sal-delay="200" data-sal-easing="ease-out-bounce">
+            <div class="apps" data-scroll>
                 <img src="img/trivia.jpeg" alt="trivia game application">
                 <p> Comic trivia is a trivia game for anyone who enjoys comics.</p>
                 <p> Tech: HTML, CSS and JavaScript.</p>
@@ -166,7 +164,7 @@
                 </a>
             </div>
 
-            <div class="apps" data-sal-duration="1200" data-sal="zoom-in" data-sal-delay="200" data-sal-easing="ease-out-bounce">
+            <div class="apps" data-scroll>
                 <img src="img/gif.jpeg" alt="gif search application">
                 <p>Giphy search using a ajax request to the giphy api to have the top 25 gifs dynamically show on screen.</p>
                 <p>Tech: HTML, CSS and JavaScript</P>
@@ -180,7 +178,7 @@
                 </a>
             </div>
 
-            <div class="apps" data-sal-duration="1200" data-sal="zoom-in" data-sal-delay="200" data-sal-easing="ease-out-bounce">
+            <div class="apps" data-scroll>
                 <img src="img/tic.jpeg" alt="classic tic tac toe">
                 <p>The classic game of tic tac toe.</p>
                 <p>Tech: HTML, CSS and JavaScript.</p>
@@ -244,7 +242,7 @@
 
     </scrool-container>
     <script src="main.js"></script>
-    <script src="./node_modules/sal.js/dist/sal.js"></script>
-    <script>sal();</script>
+    <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+    <script>ScrollOut();</script>
 </body>
 </html>
