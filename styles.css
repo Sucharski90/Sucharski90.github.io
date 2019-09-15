@@ -10,6 +10,10 @@ body, html {
     scroll-behavior: smooth;
   
   }
+  .container {
+    max-width: 75%;
+    margin: auto;
+}
   #nav-bar {
     position: relative;
     display: flex;
@@ -91,8 +95,7 @@ body, html {
   }
 
   .about p {
-      margin-top: 5%;
-      margin-bottom: 5%;
+     
   }
 
   .full img, .landing img, .apps img { 
@@ -149,6 +152,7 @@ body, html {
       border: 1px solid black;
       box-shadow: 5px 10px 8px 10px #888888;
       border-radius: 5px;
+      margin-bottom: 10px;
   }
   .pro-btn, .reff-btn {
       font-size: 14px;
@@ -356,3 +360,13 @@ animation: none !important;
         background-color: rgba(0, 0, 0, 0.5);
     }
   }
+
+  @media only screen and (max-width: 350px) {
+    #nav-bar a {
+        padding: 0px;
+    }
+  }
+  span.download.f-awesome {
+    color: white;
+    font-size: 25px;
+}
