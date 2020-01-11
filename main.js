@@ -35,3 +35,5 @@ let closeBtnPatt = document.querySelector('#closeBtnPatt');
   closeBtn.addEventListener('click', closeModal);
   closeBtnPatt.addEventListener('click', closePatt);
   window.addEventListener('click', outsideClick);
+
+ 
