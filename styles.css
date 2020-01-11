@@ -94,9 +94,7 @@ body, html {
       padding: 20px;
   }
 
-  .about p {
-     
-  }
+  
 
   .full img, .landing img, .apps img { 
       height: 100%;
@@ -153,6 +151,7 @@ body, html {
       box-shadow: 5px 10px 8px 10px #888888;
       border-radius: 5px;
       margin-bottom: 10px;
+      font-size: 14px;
   }
   .pro-btn, .reff-btn {
       font-size: 14px;
