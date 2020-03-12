@@ -5,261 +5,221 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!-- google fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Chakra+Petch:300,500,600,700|Electrolize" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Courgette|Heebo:100,300,400,500,700&display=swap" rel="stylesheet">
     <!-- font awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
-    <script
-  src="https://code.jquery.com/jquery-3.4.1.js"
-  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
-  crossorigin="anonymous"></script>
     <title>Matthew Sucharski</title>
 </head>
 <body>
 
-    <!-- hero with navbar -->
-    <scrool-container>
-                <div id="nav-bar">
-                    <span class="name">Matthew Sucharski</span>
-                  <a href="#about">About</a>
-                  <a href="#projects">Projects</a>
-                  <a href="#contact">Contact</a>
-                  <a href="#references">References</a>
-                </div>
+        <div class="social-links">
+                <div class="row">
+                        <a href="https://www.linkedin.com/in/mattsucharski/">
+                            <i id="linkedIn"class="fab fa-linkedin-in adding-pad"></i>
+                        </a>
+                </div> 
                   
-                <div class="top-section ptext">
-                    <div class="hero-text">
-                        <p>Front End <span class="developer">Developer</span> <br> <span class="under-hero">{Coffee Code Repeat}</span><br>
-                           <span class="f-awesome"><span class="developer">Links:</span>
-                                <a href="https://github.com/Sucharski90"><i class="fab fa-github"></i>
+                 <div class="row">
+                        <a href="https://github.com/Sucharski90">
+                            <i id="gitHub"class="fab fa-github adding-pad">
+                            </i>
+                        </a>
+                 </div>
+                 
+            </div>
+
+        <nav class="navbar fixed-top navbar-expand-lg">
+                <a class="navbar-brand" href="/">Matt Sucharski</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon">
+                                <div class="hamburger" id="hamburger-6">
+                                  <span class="line"></span>
+                                  <span class="line"></span>
+                                  <span class="line"></span>
+                                </div>
+                  </span>
+                </button>
+              
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Sites
+                      </a>
+                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Cigar Shop</a>
+                        <a class="dropdown-item" href="#">American Post Gaztte</a>
+                        <a class="dropdown-item" href="#">Free Pressers</a>
+                        <a class="dropdown-item" href="#">iLift</a>
+                        <a class="dropdown-item" href="#">Doom</a>
+                        <a class="dropdown-item" href="#">Bagel Boys</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Age Gate</a>
+                        <a class="dropdown-item" href="#">Weather App</a>
+                        <a class="dropdown-item" href="#">Comic Trivia</a>
+                        <a class="dropdown-item" href="#">Gif generator</a>
+                      </div>
+                      
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                          </li>
+                          <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Download Resume
                                 </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">Pdf</a>
+                                  <a class="dropdown-item" href="#">Word</a>
+                                </div>
                                 
-                                <a href="https://www.linkedin.com/in/mattsucharski/"><i class="fab fa-linkedin-in"></i></a></span><br>
-
-                                <span class="download f-awesome">Download Resume
-                                <a href="assets/Matthew-Sucharski-DEV.pdf" download><i class="fas fa-file-download"></i>
-                                </a></span>
-                        </p></div>
-                            
+                              </li>
+                  </ul>
                 </div>
-        
-<div class="container">
+              </nav>
 
+              <section class="hero pt-5 mt-5 mb-5 pb-5">
+                  <div class="container">
+                      <div class="row">
+                          <div class="col-sm-6 photo-side">
+                                <img class="photo-of-me img-fluid" src="img/photo.png" class="img-fluid" alt="Responsive image">
+                          </div>
+                          <div class="col-sm-6">
+                              <h2>Front End Developer</h2>
+                              <p>I have worked everywhere from warehouses to Wall street, but there is nothing I love more than going from how do I do this to, it works. In my programming career I have worked at Political Media, Canon USA and FlyJets. Currently sharpening my skills as a React developer I try to do projects whenever I have free time. </p>
 
-        <section class="about" id="about">
-            
-                <h2> About </h2>
-                <p> Born and raised in New York. Self-starter, self-taught and highly motivated. I have worked everywhere from factory floors to Wall Street. I write the cleanist code and applications I can to get the job done. I am a front end developer who takes great pride in every finished project. I enjoy working in JavaScript and I have experiance working in React.js, Express.js, Node.js, and PostgreSQL. If I am not coding I am on one of the many online course sites adding to my skill tool box and sharpening my skills. 
-                </p>
-            
-                <h2>Technologies</h2>
-                <h3>Languages:</h3>
-                <p>HTML5, CSS3, JavaScript, Node.js, Ajax, Python 3, PostgreSQL</p>
+                            </div>
+                      </div>
+                  </div>
+              </section>
 
-                <h3>Libraries:</h3>
-                <p>React, JQuery</p>
+              <section class="projects pt-5 mt-5">
+                  <div class="container">
+                      <h3>Projects</h3>
+                      <hr>
+                      <div class="row pt-4 mb-4">
+                          <div class="col-md-4 image-side">
+                                <img src="img/cigarshop.jpeg" class="img-fluid" alt="...">
+                          </div>
+                          <div class="col-md-8">
+                                <h4>Cigar Shop</h4>
+                                <h5>Tech: React, React Router, React Context api, React Bootstrap, ShareThis, Twitter timeline embed, PayPal api</h5>
+                                <p>I created this site to help myself sharpen my skills with React. I used design techniques I learned while at Politic such as the ShareThis, Twitter embed and having a utility on each page. I am useing the context api to pass state around components and react router to display new components. Bootstap was used because I enjoy working in the library it makes spacing elements much faster and easier.</p>
+                          </div>
+                      </div>
 
-                <h3>Frameworks:</h3>
-                <p>BootStrap</p>
+                      <div class="row pt-4 mb-4">
+                            <div class="col-md-4 image-side">
+                                  <img src="img/post.jpeg" class="img-fluid" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                  <h4>American Post Gazette</h4>
+                                  <h5>Tech: Structure CMS, Bootstrap</h5>
+                                  <p>Created while at work for Political Media. American Post Gazette is a site that provides news daily to its readers. I did not design this site or any logos, I built it useing Structure CMS and Bootstrap.</p>
+                            </div>
+                        </div>
 
-                <h3>Also Experiance With:</h3>
-                <p>Git, GitHub, Sass, HTML5 Emails, HTML5 Banner Ads, WordPress, CSS Animations</p>
+                        <div class="row pt-4 mb-4">
+                                <div class="col-md-4 image-side">
+                                      <img src="img/freepresser.jpeg" class="img-fluid" alt="...">
+                                </div>
+                                <div class="col-md-8">
+                                      <h4>Free Pressers</h4>
+                                      <h5>Tech: Structure CMS, Bootstrap</h5>
+                                      <p>Created while at work for Political Media. Free Pressers is a site that provides news daily to its readers. I did not design this site or any logos, I built it useing Structure CMS and Bootstrap.</p>
+                                </div>
+                            </div>
 
-        </section>
+                            <div class="row pt-4 mb-4">
+                                    <div class="col-md-4 image-side">
+                                          <img src="img/bagel.png" class="img-fluid" alt="...">
+                                    </div>
+                                    <div class="col-md-8">
+                                          <h4>Bagel Boys</h4>
+                                          <h5>Tech: Structure CMS, Bootstrap</h5>
+                                          <p>Created while at work for Political Media. Bagel Boys is a bagel shop. I did not design this site or any logos, I built it useing Structure CMS and Bootstrap. This site is in development, I just liked the design so I added it.</p>
+                                    </div>
+                                </div>
 
-        <section class="education">
-            <h2>Education</h2>
-                <p> Completed the Web Development Immersive course at General Assembly in Manhatten. Since completion I have gained skills through Team Treehous, Udemy,Free Code Camp, Coding Phase, various youtube videos and any coding book I come across.  
-                    </p>
-        </section>
+                                <div class="row pt-4 pb-5">
+                                        <div class="col-md-4 image-side">
+                                              <img src="img/ilift.jpeg" class="img-fluid" alt="...">
+                                        </div>
+                                        <div class="col-md-8">
+                                              <h4>iLift</h4>
+                                              <h5>Tech: React, Express, SQL</h5>
+                                              <p>This was a team project created while at General Assembly. I created the idea for the app, build the database and made a few components.</p>
+                                        </div>
+                                    </div>
+                  </div>
+              </section>
 
-        <section>
-                <h2 id="projects">Full Sites</h2>
-            </section>
-
-    <section class="full-projects" >
-        <!-- <h2>Full Projects</h2> -->
-
-        <div class="full" data-scroll>
-            <img src="img/cigarshop.jpeg" alt="free site">
-            <p>Personal project to create a cigar shop, I designed and coded this site.</p>
-              <p>Tech: React, React Router, React Bootstrap</p>
-              <a href="https://sucharski90.github.io/cigar-shop">
-                <button class="pro-btn">Live Site</button>
-            </a>
-            <a href="https://github.com/Sucharski90/cigar-shop">
-                <button class="pro-btn">Code</button>
-              </a>
-            </div>
-        <div class="full" data-scroll>
-            <img src="img/bagel.png" alt="free site">
-            <p>Built landing page with Bootstrap 4. Made site responsive, added animations.  Done while with Political Media useing Structure CMS. I did not design the layout or make logos for site.</p>
-              <p>Tech: Bootstrap 4, HTML5, CSS3, JQuery, Structure CMS</p>
-              <a href="https://bagelboycr.structure.site/index">
-                <button class="pro-btn">Live Site</button>
-            </a>
-            </div>
-
-        <div class="full" data-scroll>
-            <img src="img/post.jpeg" alt="free site">
-            <p>Built landing page with Bootstrap 4. Made site responsive, added animations. Added ads to site also useing google ads. Done while with Political Media useing Structure CMS. I did not design the layout or make logos for site.</p>
-              <p>Tech: Bootstrap 4, HTML5, CSS3, JQuery, Structure CMS</p>
-              <a href="https://americanpostgazette.com/">
-                <button class="pro-btn">Live Site</button>
-            </a>
-            </div>
-
-            <div class="full" data-scroll>
-                <img src="img/freepresser.jpeg" alt="free site">
-                <p>Built landing page with Bootstrap 4. Made site responsive, added animations. Added ads to site also useing google ads. Done while with Political Media useing Structure CMS. I did not design the layout or make logos for site.</p>
-                  <p>Tech: Bootstrap 4, HTML5, CSS3, JQuery, Structure CMS</p>
-                  <a href="https://freepressers.com/">
-                    <button class="pro-btn">Live Site</button>
-                </a>
-                </div>
-
-                <div class="full" data-scroll>
-                <img src="img/ilift.jpeg" alt="ilift site">
-                <p> ILift is an app for anyone who wants to get in shape. You can excersise in the gym with weights or at home, it all depends on what you have access too. This was a team project.</p>
-                  <p>Tech: Express backend and a React frontend.</p>
-                  <a href="https://shielded-garden-81038.herokuapp.com/">
-                    <button class="pro-btn">Live Site</button>
-                </a>
-                <a href="https://github.com/Sucharski90/workout-app">
-                  <button class="pro-btn">Code</button>
-                </a>
-                </div>
-
-                <div class="full" data-scroll>
-                <img src="img/doom.jpeg" alt="Doom site">
-                <p>A site created to show some information about the game DOOM created by ID software</p>
-                <p>Tech: React.js</p>
-                <a href="https://sucharski90.github.io/DOOM-react-//">
-                <button class="pro-btn">Live Site</button>
-            </a>
-
-                <a href="https://github.com/Sucharski90/DOOM-react-">
-                <button class="pro-btn">Code</button>
-            </a>
-                </div>
-
-        </section>
-
-            <section>
-                <h2>Small Projects</h2>
-            </section>
-        <section class="small-apps">
-
-            <!-- <h2>Apps</h2> -->
-
-
-            <div class="apps" data-scroll>
-                <img src="img/age_gate.png" alt="Age Gate">
-                <p>Landing page age gate, takes user date of birth and determins if the person can view the site, also creates a cookie so returning users do not see the gate if they click "Remember me"</p>
-                <p>Tech: HTML CSS Javascript </p>
-
-                <a href="https://sucharski90.github.io/age-gate/">
-                <button class="pro-btn">Live Site</button>
-            </a>
-                <a href="https://github.com/Sucharski90/age-gate">
-                  <button class="pro-btn">Code</button>
-                </a>
-            </div>
-
-            <div class="apps" data-scroll>
-                <img src="img/weather.jpeg" alt="Weather application">
-                <p>A weather app created to display the current weather and various conditions in a modal, weather conditions are taken from OpenWeatherMap Api</p>
-                <p>Tech: JavaScript, JQuery (for api call) </p>
-
-                <a href="https://sucharski90.github.io/Weather//">
-                <button class="pro-btn">Live Site</button>
-            </a>
-                <a href="https://github.com/Sucharski90/Weather">
-                  <button class="pro-btn">Code</button>
-                </a>
-            </div>
-
-            <div class="apps" data-scroll>
-                <img src="img/trivia.jpeg" alt="trivia game application">
-                <p> Comic trivia is a trivia game for anyone who enjoys comics.</p>
-                <p> Tech: HTML, CSS and JavaScript.</p>
-
-                <a href="https://sucharski90.github.io/Comic-Trivia/">
-                <button class="pro-btn">Live Site</button>
-            </a>
-
-                <a href="https://github.com/Sucharski90/Comic-Trivia">
-                  <button class="pro-btn">Code</button>
-                </a>
-            </div>
-
-            <div class="apps" data-scroll>
-                <img src="img/gif.jpeg" alt="gif search application">
-                <p>Giphy search using a ajax request to the giphy api to have the top 25 gifs dynamically show on screen.</p>
-                <p>Tech: HTML, CSS and JavaScript</P>
-
-                    <a href="https://sucharski90.github.io/Giphy-search/">
-                    <button class="pro-btn">Live Site</button>
-                </a>
-
-                    <a href="https://github.com/Sucharski90/Giphy-search">
-                  <button class="pro-btn">Code</button>
-                </a>
-            </div>
-
-            
-    </section>    
-
-    <section class="reff" id="references">
-        <h3>Reference Letters</h3>
-    </section>
-        <section class="reff-info">
-        <p><span class="person">Anthony Ferguson Jr. <br></span>
-                Sr. Specialist, UI/UX Developer <br>
-                Canon USA, Inc.<br><button class="reff-btn" id="ant">Show Letter</button></p>
-                
-
-        <p><span class="person">Patricia Venezia <br></span>
-                Manager, Digital Marketing <br>
-                Canon USA, Inc. <br>
-                <button class="reff-btn" id="pat">Show Letter</button></p>
-                
-    </section>
-
-    <section>
-    <div id="simpleModal" class="modal">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <span class="closeBtn">&times;</span>
-                </div>
-                <img src="img/anthony.jpeg" alt="Anthony letter">
-            </div>
-        </div>
-
-        <div id="simpleModal" class="modalPatt">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <span class="closeBtn" id="closeBtnPatt">&times;</span>
+              <section class="small-projects pt-5">
+                    <div class="container">
+                        <h3>Small Projects</h3>
+                        <hr>
+                        <div class="row pt-4 mb-4">
+                            <div class="col-md-4 image-side">
+                                  <img src="img/age_gate.png" class="img-fluid" alt="...">
+                            </div>
+                            <div class="col-md-8">
+                                  <h4>Age Gate</h4>
+                                  <h5>Tech: Html, CSS Javascript</h5>
+                                  <p>Created an age gate to practice javascript, it displays a modal that will not let anyone under 21 to get into the site. Todays date does not need to be hard coded as a code generates todays date and figures out how old each person is.</p>
+                            </div>
+                        </div>
+  
+                        <div class="row pt-4 mb-4">
+                              <div class="col-md-4 image-side">
+                                    <img src="img/weather.jpeg" class="img-fluid" alt="...">
+                              </div>
+                              <div class="col-md-8">
+                                    <h4>Weather App</h4>
+                                    <h5>Tech: Html, CSS Javascript</h5>
+                                    <p>Simple weather app to practice useing an api. Uses the weather api to display current weather conditions for the city the user enters</p>
+                              </div>
+                          </div>
+  
+                          <div class="row pt-4 mb-4">
+                                  <div class="col-md-4 image-side">
+                                        <img src="img/trivia.jpeg" class="img-fluid" alt="...">
+                                  </div>
+                                  <div class="col-md-8">
+                                        <h4>Comic Trivia</h4>
+                                        <h5>Tech: Html, CSS Javascript</h5>
+                                        <p>One of my earlier projects, I love comics so I wanted to create something based on comics. Each question and answer is kept in a json file and is looped over as the game goes.</p>
+                                  </div>
+                              </div>
+  
+                              <div class="row pt-4 mb-4 pb-5">
+                                      <div class="col-md-4 image-side">
+                                            <img src="img/gif.jpeg" class="img-fluid" alt="...">
+                                      </div>
+                                      <div class="col-md-8">
+                                            <h4>Gif generator</h4>
+                                            <h5>Tech: Structure CMS, Bootstrap</h5>
+                                            <p>An early project to learn how to use an api. The user enters a word and then the giphy api returns what the user searched for.</p>
+                                      </div>
+                                  </div>
+  
                     </div>
-                    <img src="img/patt.jpeg" alt="Patt letter">
-                </div>
-            </div>
-        </section>
-
-
-        <section class="contact" id="contact">
-            <h3>Contact Info</h3>
-            <p>Email: MVSucharski@gmail.com</p>
-            <p>Phone: (516) 282 - 6084</p>
-        </section>
-    </div>
+                </section>
+    
         <footer>
             
         </footer>
 
     </scrool-container>
-    <script src="main.js"></script>
-    <script>ScrollOut();</script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="main.js"></script>
     
 </body>
 </html>
