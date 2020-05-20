@@ -3,10 +3,13 @@
     --blue:#0a7ffb;
     --light-blue: #efefef;
     --white:#EAF4FF;
+    --button-link: red;
   }
 * {
-    font-family: 'Heebo';
     outline: none !important;
+}
+.btn-primary{
+    background-color: var(--button-link);
 }
 .social-links {
     position: fixed;
@@ -25,6 +28,12 @@
     background-color: #24292e;
     padding-right: 8px;
     transition: padding 1s;
+}
+#linkedIn-mobile{
+    background-color: #2867B2;
+}
+#gitHub-mobile {
+    background-color: #24292e;
 }
 #linkedIn:hover {
     padding: 8px 10px 8px 80px;
@@ -137,3 +146,19 @@ section.small-projects {
     background-color: #00000014;
     padding-top: 12px;
 }
+.row.social-links-mobile {
+    position: fixed;
+    bottom: 0;
+    width: 102%;
+    z-index: 200;
+    margin: 0;
+    display: none;
+}
+@media only screen and (max-width: 575px) {
+    .social-links {
+        display: none;
+    }
+    .row.social-links-mobile{
+        display: flex;
+    }
+  }
