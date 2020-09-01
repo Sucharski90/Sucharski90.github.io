@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://kit.fontawesome.com/ee8572a34d.js" crossorigin="anonymous"></script>
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Courgette|Heebo:100,300,400,500,700&display=swap" rel="stylesheet">
     <!-- font awesome -->
@@ -13,6 +14,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Matthew Sucharski</title>
 </head>
 
@@ -47,8 +49,8 @@
             </a>
         </div>
     </div>
-    <nav class="navbar fixed-top navbar-expand-lg">
-        <a class="navbar-brand" href="/">Matt Sucharski</a>
+    <nav class="navbar fixed-top navbar-expand-sm">
+        <h1 class="navbar-brand" href="/">Matt Sucharski</h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
             aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
@@ -62,35 +64,6 @@
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="/index">Home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        Sites
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/cigar.html">Cigar Shop</a>
-                        <a class="dropdown-item" href="/american-post.html">American Post Gaztte</a>
-                        <a class="dropdown-item" href="#">Free Pressers</a>
-                        <a class="dropdown-item" href="/ilift.html">iLift</a>
-                        <a class="dropdown-item" href="#">Doom</a>
-                        <a class="dropdown-item" href="#">Bagel Boys</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Age Gate</a>
-                        <a class="dropdown-item" href="#">Weather App</a>
-                        <a class="dropdown-item" href="#">Comic Trivia</a>
-                        <a class="dropdown-item" href="#">Gif generator</a>
-                    </div>
-
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
                         aria-expanded="false">
@@ -110,14 +83,39 @@
         <div class="container">
             <div class="row pt-5">
                 <div class="col-sm-6 photo-side mb-2">
-                    <img class="photo-of-me img-fluid" src="img/photo.png" class="img-fluid" alt="Responsive image">
+                    <div class="row pb-5">
+                        <div class="col">
+                                <img class="photo-of-me img-fluid" src="img/photo.png" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col">
+                                <i class="fas fa-envelope"></i> <span class="font-weight-bolder"><a href="mailto:mvsucharski@gmail.com" class="text-dark">mvsucharski@gmail.com</a></span>
+                            </div>
+                        </div>
                 </div>
                 <div class="col-sm-6">
-                    <h2>Front End Developer</h2>
+                    <h1>Front End Developer</h1>
                     <p>I have worked everywhere from warehouses to Wall street, but there is nothing I love more than going
                         from how do I do this to, it works. In my programming career I have worked at Political Media, Canon
                         USA and FlyJets. Currently sharpening my skills as a React developer I try to do projects whenever
                         I have free time. </p>
+
+                        <h4>Skills</h4>
+                        <ul class="pl-0">
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript/ES6</li>
+                            <li>JQuery</li>
+                            <li>React</li>
+                            <li>React Router</li>
+                            <li>Bootstrap</li>
+                            <li>Photoshop</li>
+                            <li>Google Analytics</li>
+                            <li>Shopify</li>
+                            <li>Git</li>
+                            <li>Github</li>
+                        </ul>
 
                 </div>
             </div>
@@ -129,11 +127,11 @@
             <h3>Personal Projects</h3>
             <hr>
             <div class="row pt-4 pb-4">
-                <div class="col-md-4 image-side">
-                    <a href="/cigar.html"><img src="img/cigarshop.jpeg" class="img-fluid" alt="..."></a>
+                <div class="col-md-4 image-side" data-aos="fade-right">
+                    <a href="https://sucharski90.github.io/cigar-shop/"><img src="img/cigarshop.jpeg" class="img-fluid pb-3" alt="..."></a>
                 </div>
-                <div class="col-md-8">
-                  <a href="/cigar.html"><h4>Cigar Shop</h4></a>
+                <div class="col-md-8" data-aos="fade-left">
+                  <a href="https://sucharski90.github.io/cigar-shop/"><h4 class="text-dark">Cigar Shop</h4></a>
                     <h5>Tech: React, React Router, React Context api, React Bootstrap, ShareThis, Twitter timeline embed, PayPal
                         api</h5>
                     <p>I created this site to help myself sharpen my skills with React. I used design techniques I learned while
@@ -147,11 +145,11 @@
 
 
             <div class="row pt-4 pb-5">
-                <div class="col-md-4 image-side">
-                  <a href="/ilift.html"><img src="img/ilift.jpeg" class="img-fluid" alt="..."></a>
+                <div class="col-md-4 image-side" data-aos="fade-right">
+                  <a href="https://shielded-garden-81038.herokuapp.com/"><img src="img/ilift.jpeg" class="img-fluid pb-3" alt="..."></a>
                 </div>
-                <div class="col-md-8">
-                    <a href="/ilift.html"><h4>iLift</h4></a>
+                <div class="col-md-8"  data-aos="fade-left">
+                    <a href="https://shielded-garden-81038.herokuapp.com/"><h4 class="text-dark">iLift</h4></a>
                     <h5>Tech: React, Express, SQL</h5>
                     <p>This was a team project created while at General Assembly. I created the idea for the app, build the
                         database and made a few components.</p>
@@ -167,54 +165,45 @@
             <hr>
 
             <div class="row pt-4 pb-4">
-                <div class="col-md-4 image-side">
-                  <a href="/american-post.html"><img src="img/post.jpeg" class="img-fluid" alt="..."></a>
+                <div class="col-md-4 image-side" data-aos="fade-right">
+                  <a href="https://politicallycorrecter.com/"><img src="img/post.jpeg" class="img-fluid pb-3" alt="..."></a>
                 </div>
-                <div class="col-md-8">
-                  <a href="/american-post.html"><h4>American Post Gazette</h4></a>  
+                <div class="col-md-8"  data-aos="fade-left">
+                  <a href="https://politicallycorrecter.com/"><h4 class="text-dark">Politically Correcter</h4></a>  
                     <h5>Tech: Structure CMS, Bootstrap</h5>
-                    <p> American Post Gazette is a site that provides news daily to its readers. </p>
+                    <p> Politically Correcter is a site that provides news daily to its readers. </p>
                 </div>
             </div>
 
             <div class="row pt-4 pb-4">
-                <div class="col-md-4 image-side">
-                  <a href="/freepressers.html"><img src="img/freepresser.jpeg" class="img-fluid" alt="..."></a>
+                <div class="col-md-4 image-side" data-aos="fade-right">
+                  <a href="https://freepressers.com/"><img src="img/freepresser.jpeg" class="img-fluid pb-3" alt="..."></a>
                 </div>
-                <div class="col-md-8">
-                 <a href="/freepressers.html"><h4>Free Pressers</h4></a>   
+                <div class="col-md-8"  data-aos="fade-left">
+                 <a href="https://freepressers.com/"><h4 class="text-dark">Free Pressers</h4></a>   
                     <h5>Tech: Structure CMS, Bootstrap</h5>
                     <p>Free Pressers is a site that provides news daily to its readers.</p>
                 </div>
             </div>
 
+            
             <div class="row pt-4 pb-4">
-                <div class="col-md-4 image-side">
-                  <a href="/bagel-boys.html"><img src="img/bagel.png" class="img-fluid" alt="..."></a>
-                </div>
-                <div class="col-md-8">
-                    <a href="/bagel-boys.html"><h4>Bagel Boys</h4></a>
-                    <h5>Tech: Structure CMS, Bootstrap</h5>
-                    <p>Bagel Boys is a bagel shop. This site is in development, I just liked the design so I added it.</p>
-                </div>
-            </div>
-            <div class="row pt-4 pb-4">
-                    <div class="col-md-4 image-side">
-                      <a href="/bring-our-troops.html"><img src="img/bring-our-troops-home.png" class="img-fluid" alt="..."></a>
+                    <div class="col-md-4 image-side" data-aos="fade-right">
+                      <a href="https://bringourtroopshome.us/"><img src="img/bring-our-troops-home.png" class="img-fluid pb-3" alt="..."></a>
                     </div>
-                    <div class="col-md-8">
-                      <a href="/bring-our-troops.html"><h4>Bring our Troops Home</h4></a>
+                    <div class="col-md-8"  data-aos="fade-left">
+                      <a href="https://bringourtroopshome.us/"><h4 class="text-dark">Bring our Troops Home</h4></a>
                         <h5>Tech: Structure CMS, Bootstrap</h5>
                         <p>Bagel Boys is a bagel shop. This site is in development, I just liked the design so I added it.</p>
                     </div>
                 </div>
 
                 <div class="row pt-4 pb-4">
-                        <div class="col-md-4 image-side">
-                           <a href="https://defendtheguard.us/"><img src="img/defend-the-guard-home.png" class="img-fluid" alt="..."></a>
+                        <div class="col-md-4 image-side" data-aos="fade-right">
+                           <a href="https://defendtheguard.us/"><img src="img/defend-the-guard-home.png" class="img-fluid pb-3" alt="..."></a>
                         </div>
-                        <div class="col-md-8">
-                            <a href="https://defendtheguard.us/"><h4>Defend the Guard</h4></a>
+                        <div class="col-md-8"  data-aos="fade-left">
+                            <a href="https://defendtheguard.us/"><h4 class="text-dark">Defend the Guard</h4></a>
                             <h5>Tech: Structure CMS, Bootstrap</h5>
                             <p>Bagel Boys is a bagel shop. This site is in development, I just liked the design so I added it.</p>
                         </div>
@@ -222,11 +211,11 @@
 
 
                         <div class="row pt-4 pb-4">
-                                <div class="col-md-4 image-side">
-                                   <a href="https://newamericanpopulist.com/"><img src="img/new-american-home.png" class="img-fluid" alt="..."></a>
+                                <div class="col-md-4 image-side" data-aos="fade-right">
+                                   <a href="https://newamericanpopulist.com/"><img src="img/new-american-home.png" class="img-fluid pb-3" alt="..."></a>
                                 </div>
-                                <div class="col-md-8">
-                                    <a href="https://newamericanpopulist.com/"><h4>New American Populist</h4></a>
+                                <div class="col-md-8"  data-aos="fade-left">
+                                    <a href="https://newamericanpopulist.com/"><h4 class="text-dark">New American Populist</h4></a>
                                     <h5>Tech: Structure CMS, Bootstrap</h5>
                                     <p>Bagel Boys is a bagel shop. This site is in development, I just liked the design so I added it.</p>
                                 </div>
@@ -241,11 +230,11 @@
             <h3>Small Projects</h3>
             <hr>
             <div class="row pt-4 pb-4">
-                <div class="col-md-4 image-side">
-                   <a href="https://sucharski90.github.io/age-gate/#"><img src="img/age_gate.png" class="img-fluid" alt="..."></a>
+                <div class="col-md-4 image-side" data-aos="fade-right">
+                   <a href="https://sucharski90.github.io/age-gate/"><img src="img/age_gate.png" class="img-fluid pb-3" alt="..."></a>
                 </div>
-                <div class="col-md-8">
-                    <a href="https://sucharski90.github.io/age-gate/#"><h4>Age Gate</h4></a>
+                <div class="col-md-8"  data-aos="fade-left">
+                    <a href="https://sucharski90.github.io/age-gate/"><h4 class="text-dark">Age Gate</h4></a>
                     <h5>Tech: Html, CSS Javascript</h5>
                     <p>Created an age gate to practice javascript, it displays a modal that will not let anyone under 21 to
                         get into the site. Todays date does not need to be hard coded as a code generates todays date and
@@ -254,11 +243,11 @@
             </div>
 
             <div class="row pt-4 pb-4">
-                <div class="col-md-4 image-side">
-                  <a href="https://sucharski90.github.io/Weather//"><img src="img/weather.jpeg" class="img-fluid" alt="..."></a>
+                <div class="col-md-4 image-side" data-aos="fade-right">
+                  <a href="https://sucharski90.github.io/Weather//"><img src="img/weather.jpeg" class="img-fluid pb-3" alt="..."></a>
                 </div>
-                <div class="col-md-8">
-                    <a href="https://sucharski90.github.io/Weather//"><h4>Weather App</h4></a>
+                <div class="col-md-8"  data-aos="fade-left">
+                    <a href="https://sucharski90.github.io/Weather//"><h4 class="text-dark">Weather App</h4></a>
                     <h5>Tech: Html, CSS, Javascript, Weather api</h5>
                     <p>Simple weather app to practice useing an api. Uses the weather api to display current weather conditions
                         for the city the user enters</p>
@@ -266,11 +255,11 @@
             </div>
 
             <div class="row pt-4 pb-4">
-                <div class="col-md-4 image-side">
-                    <img src="img/trivia.jpeg" class="img-fluid" alt="...">
+                <div class="col-md-4 image-side" data-aos="fade-right">
+                   <a href="https://sucharski90.github.io/Comic-Trivia/"><img src="img/trivia.jpeg" class="img-fluid pb-3" alt="..."></a>
                 </div>
-                <div class="col-md-8">
-                    <h4>Comic Trivia</h4>
+                <div class="col-md-8"  data-aos="fade-left">
+                   <a href="https://sucharski90.github.io/Comic-Trivia/"><h4 class="text-dark">Comic Trivia</h4></a>
                     <h5>Tech: Html, CSS Javascript</h5>
                     <p>One of my earlier projects, I love comics so I wanted to create something based on comics. Each question
                         and answer is kept in a json file and is looped over as the game goes.</p>
@@ -278,11 +267,11 @@
             </div>
 
             <div class="row pt-4 pb-4 pb-5">
-                <div class="col-md-4 image-side">
-                    <img src="img/gif.jpeg" class="img-fluid" alt="...">
+                <div class="col-md-4 image-side" data-aos="fade-right">
+                   <a href="https://sucharski90.github.io/Giphy-search/"><img src="img/gif.jpeg" class="img-fluid pb-3" alt="..."></a>
                 </div>
-                <div class="col-md-8">
-                    <h4>Gif generator</h4>
+                <div class="col-md-8"  data-aos="fade-left">
+                   <a href="https://sucharski90.github.io/Giphy-search/"><h4 class="text-dark">Gif generator</h4></a>
                     <h5>Tech: HTML, CSS, Javascript, Giphy api</h5>
                     <p>An early project to learn how to use an api. The user enters a word and then the giphy api returns what
                         the user searched for.</p>
@@ -292,11 +281,16 @@
         </div>
     </section>
 
-    <footer class="bg-dark">
+    <footer class="bg-dark pt-2 pb-5 text-white">
         <div class="container">
             <div class="row">
                 <div class="col">
                     <h3>Contact info</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <i class="fas fa-envelope"></i> <span><a href="mailto:mvsucharski@gmail.com" class="text-white">mvsucharski@gmail.com</a></span>
                 </div>
             </div>
         </div>
@@ -309,7 +303,12 @@
         crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
         crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init();
+          </script>
     <script src="main.js"></script>
+    
 
 </body>
 

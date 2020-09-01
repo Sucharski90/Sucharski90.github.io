@@ -154,6 +154,15 @@ section.small-projects {
     margin: 0;
     display: none;
 }
+li {
+    list-style: none;
+}
+.dropdown-toggle::after {
+    display: none;
+}
+.dropdown::hover .dropdown-menu {
+    display: block;
+}
 @media only screen and (max-width: 575px) {
     .social-links {
         display: none;
