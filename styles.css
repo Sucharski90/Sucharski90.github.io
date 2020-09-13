@@ -146,12 +146,10 @@ section.small-projects {
     background-color: #00000014;
     padding-top: 12px;
 }
-.row.social-links-mobile {
+.social-links-mobile {
     position: fixed;
     bottom: 0;
-    width: 102%;
     z-index: 200;
-    margin: 0;
     display: none;
 }
 li {
@@ -163,11 +161,15 @@ li {
 .dropdown::hover .dropdown-menu {
     display: block;
 }
+.fixed-bottom-nav {
+    font-size: 30px;
+    padding-top: 6px;
+}
 @media only screen and (max-width: 575px) {
     .social-links {
         display: none;
     }
-    .row.social-links-mobile{
+    .social-links-mobile{
         display: flex;
     }
   }
