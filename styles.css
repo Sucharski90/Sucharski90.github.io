@@ -2,7 +2,7 @@
     --main-bg-color: #4a0b0b;
     --blue:#0a7ffb;
     --light-blue: #efefef;
-    --white:#EAF4FF;
+    --white:#bbbbbb;
     --button-link: red;
   }
   .bg-dark{background-color: #4a0b0b !important;}
@@ -53,7 +53,7 @@ a.nav-link {
     color: var(--white);
 }
 .navbar-brand {
-    font-family: 'Courgette';
+    
     color: var(--white);
 }
 .photo-of-me {
