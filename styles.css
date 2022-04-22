@@ -1,11 +1,11 @@
 :root {
-    --main-bg-color: #4a0b0b;
+    --main-bg-color: #345e75;
     --blue:#0a7ffb;
     --light-blue: #efefef;
     --white:#bbbbbb;
     --button-link: red;
   }
-  .bg-dark{background-color: #4a0b0b !important;}
+  
 * {
     outline: none !important;
 }
@@ -57,11 +57,10 @@ a.nav-link {
     color: var(--white);
 }
 .photo-of-me {
-    border-radius: 130px;
+    border-radius: 30px;
     
 }
 .photo-side {
-    border-right: 2px solid var(--main-bg-color);
     text-align: center;
 }
 section.projects {
@@ -138,11 +137,7 @@ section.small-projects {
   section.site-page {
     padding-top: 35px;
 }
-.sticky {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 75px;
-}
+
 .site-info-right {
     background-color: #00000014;
     padding-top: 12px;
@@ -166,6 +161,7 @@ li {
     font-size: 30px;
     padding-top: 6px;
 }
+
 @media only screen and (max-width: 575px) {
     .social-links {
         display: none;

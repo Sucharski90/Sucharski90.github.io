@@ -5,13 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <script src="https://kit.fontawesome.com/ee8572a34d.js" crossorigin="anonymous"></script>
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Courgette|Heebo:100,300,400,500,700&display=swap" rel="stylesheet">
     <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/ee8572a34d.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz"
         crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
@@ -26,61 +24,25 @@
 
     
 
-    <div class="container-fluid">
-    <div class="row social-links-mobile w-100">
-        <div class="col-6 text-center" id="linkedIn-mobile">
-            <a href="https://www.linkedin.com/in/mattsucharski/" target="_blank">
-                <i  class="fab fa-linkedin-in text-white fixed-bottom-nav"></i>
-            </a>
-        </div>
-        <div class="col-6 bg-dark text-center" id="gitHub-mobile">
-            <a href="https://github.com/Sucharski90" target="_blank">
-                <i  class="fab fa-github text-white fixed-bottom-nav">
-                </i>
-            </a>
-        </div>
-    </div>
-</div>
+   
 
-    <nav class="navbar fixed-top navbar-expand-sm">
-            <div class="container">
-        <h1 class="navbar-brand" href="/">Matt Sucharski</h1>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon">
-                <div class="hamburger" id="hamburger-6">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </div>
-            </span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle font-weight-bolder" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-                        aria-expanded="false">
-                        Download Resume
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="/assets/Matthew-Sucharski-DEV.pdf" download>Pdf</a>
-                        <a class="dropdown-item" href="/assets/MatthewSucharskiWord.docx" download>Word</a>
-                    </div>
-
-                </li>
-            </ul>
-        </div>
-    </div>
-    </nav>
+    
 
     <section class="hero pt-5 pb-5 ">
         <div class="container">
             <div class="row pt-5">
                 <div class="col-sm-6 photo-side mb-2">
-                    <div class="row pb-5">
+                    <div class="row pb-2">
                         <div class="col">
                                 <img class="photo-of-me img-fluid" src="img/photo.png" class="img-fluid" alt="Responsive image">
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col text-center">
+                            <a href="https://www.linkedin.com/in/mattsucharski/" class="text-dark social" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        </div>
+                        <div class="col text-center">
+                            <a href="https://github.com/Sucharski90" class="text-dark social" target="_blank"><i class="fa-brands fa-github-square"></i></a>
                         </div>
                     </div>
                     <div class="row">
@@ -88,6 +50,20 @@
                                 <i class="fas fa-envelope"></i> <span class="font-weight-bolder"><a href="mailto:mvsucharski@gmail.com" class="text-dark">mvsucharski@gmail.com</a></span>
                             </div>
                         </div>
+                        <div class="row">
+                            <div class="col">
+                                <h2>Downolad Resume:</h2>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <a class="btn btn-dark btn-block rounded-0" href="/assets/Matthew-Sucharski-DEV.pdf" download>Pdf</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a class="btn btn-dark btn-block rounded-0" href="/assets/MatthewSucharskiWord.docx" download>Word</a>
+                            </div>
+                        </div>
+                       
                 </div>
                 <div class="col-sm-6">
                     <h1>Front End Developer</h1>
@@ -115,6 +91,8 @@
             </div>
         </div>
     </section>
+
+    
 
     <section class="projects pt-5">
         <div class="container">
@@ -241,41 +219,7 @@
         </div>
     </section>
 
-    <section class="small-projects pt-5 pb-4">
-        <div class="container">
-            <h3>Small Projects</h3>
-            <hr>
-            <div class="row pt-4 pb-4" style="overflow-x: hidden">
-                <div class="col-md-4 image-side" data-aos="fade-right">
-                   <a href="https://sucharski90.github.io/age-gate/" target="_blank"><img src="img/age_gate.png" class="img-fluid pb-3" alt="Image"></a>
-                </div>
-                <div class="col-md-8"  data-aos="fade-left">
-                    <a href="https://sucharski90.github.io/age-gate/" target="_blank"><h4 class="text-dark">Age Gate</h4></a>
-                    <h5>Tech: Html, CSS Javascript</h5>
-                    <p>Created an age gate to practice javascript, it displays a modal that will not let anyone under 21 to
-                        get into the site. Todays date does not need to be hard coded as a code generates todays date and
-                        figures out how old each person is. Will create a cookie if the user is old enough so the next time they visit the site they do not need to put in their birthday again</p>
-                </div>
-            </div>
-
-            <div class="row pt-4 pb-4" style="overflow-x: hidden">
-                <div class="col-md-4 image-side" data-aos="fade-right">
-                  <a href="https://sucharski90.github.io/Weather//" target="_blank"><img src="img/weather.jpeg" class="img-fluid pb-3" alt="Image"></a>
-                </div>
-                <div class="col-md-8"  data-aos="fade-left">
-                    <a href="https://sucharski90.github.io/Weather//" target="_blank"><h4 class="text-dark">Weather App</h4></a>
-                    <h5>Tech: Html, CSS, Javascript, Weather api</h5>
-                    <p>Simple weather app to practice using an api. Uses the weather api to display current weather conditions
-                        for the city the user enters</p>
-                </div>
-            </div>
-
-            
-
-            
-
-        </div>
-    </section>
+    
 
     <footer class="bg-dark pt-2 pb-5 text-white">
         <div class="container">
