@@ -24,10 +24,9 @@
     font-family: 'Poppins', sans-serif;
 }
 section.hero {
-    height: 100vh;
+    padding-top: 30px;
 }
 #hero-container{
-    height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -88,7 +87,7 @@ a.nav-link {
     color: var(--white) !important;
 }
 .photo-of-me {
-    border-radius: 30px;
+    border-radius: 330px;
     
 }
 .photo-side {
@@ -102,9 +101,7 @@ a.nav-link {
 section.small-projects {
     background-color: var(--white);
 }
-.image-side {
-        border-right: 1px solid var(--white);
-}
+
 
 .row .three{
     padding: 80px 30px;
@@ -195,10 +192,7 @@ li {
     padding-top: 6px;
 }
 @media only screen and (max-width: 767px) {
-    section.hero {
-        height: auto;
-        padding: 170px 0;
-    }
+    
   }
 @media only screen and (max-width: 575px) {
     .social-links {
