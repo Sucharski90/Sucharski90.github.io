@@ -20,11 +20,14 @@
 * {
     outline: none !important;
 }
+a {
+    text-decoration: none;
+}
 #hero-headline {
     font-family: 'Poppins', sans-serif;
 }
 section.hero {
-    padding-top: 30px;
+    padding-top: 60px;
 }
 #hero-container{
   display: -webkit-box;
