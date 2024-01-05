@@ -2,7 +2,7 @@
     --main-bg-color: #345e75;
     --blue:#0a7ffb;
     --light-blue: #efefef;
-    --white:#bbbbbb;
+    --white:#f0f0f0;
     --button-link: red;
   }
   html {
@@ -194,8 +194,24 @@ li {
     font-size: 30px;
     padding-top: 6px;
 }
+.navbar-toggler {
+    border: none;
+}
+.btn-check:focus+.btn, .btn:focus {
+    border: none;
+    box-shadow: none !important;
+}
+i.fa-solid.fa-bars {
+    color: #ffffff;
+}
+.navbar-brand {
+    padding-bottom: 0;
+}
 @media only screen and (max-width: 767px) {
-    
+    a.nav-link {
+        color: #2c272a !important;
+        font-size: 30px;
+    }
   }
 @media only screen and (max-width: 575px) {
     .social-links {
