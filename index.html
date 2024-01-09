@@ -86,7 +86,7 @@
     <section class="hero">
         <div class="container" id="hero-container">
             <div class="row pt-0 pt-md-5">
-                <div class="col-md-6 photo-side mb-2">
+                <div class="col-md-6 photo-side mb-2 d-flex justify-content-center align-items-center">
                     <div class="row pb-2">
                         <div class="col">
                             <img class="photo-of-me img-fluid" src="img/photo.png" class="img-fluid" alt="Responsive image">
@@ -98,13 +98,13 @@
 
                 </div>
                 <div class="col-md-6">
-                    <h1 id="hero-headline">Front End <span class="text-secondary">Developer</span></h1>
-                    <p id="hero-copy">I have worked everywhere from warehouses to Wall street, but there is nothing I love more than going
+                    <h1 id="hero-headline" class="drop-in">Front End <span class="text-secondary">Developer</span></h1>
+                    <p id="hero-copy" class="drop-in-2">I have worked everywhere from warehouses to Wall street, but there is nothing I love more than going
                         from how do I do this to, it works. In my programming career I have worked at Political Media, Canon
                         USA and FlyJets. Currently sharpening my skills as a React developer I try to do projects whenever
                         I have free time. </p>
-
-                    <h4>Skills</h4>
+                    <div class="drop-in-3">
+                        <h4>Skills</h4>
                     <div class="row">
                         <div class="col-sm text-center">
                             <p class="skills">HTML</p>
@@ -151,6 +151,8 @@
                         </div>
                         
                     </div>
+                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -167,7 +169,7 @@
             <div class="site-item">
                 <div class="row pt-4 pb-4" style="overflow-x: hidden">
                     <div class="col-md-4 image-side">
-                        <div data-aos="fade-right">
+                        <div data-aos="fade-right" data-aos-duration="3000">
                             <a href="https://thepostmillennial.com/" target="_blank">
                                 <img src="img/tpm.png" class="img-fluid pb-3" alt="Image">
                             </a>
@@ -175,7 +177,7 @@
     
                     </div>
                     <div class="col-md-8">
-                        <div data-aos="fade-left">
+                        <div data-aos="fade-left" data-aos-duration="3000">
                             <a href="https://thepostmillennial.com/" target="_blank">
                                 <h2 class="text-dark site-title">The Post Millennial</h2>
                             </a>
@@ -191,7 +193,7 @@
             <div class="site-item">
                 <div class="row pt-4 pb-4" style="overflow-x: hidden">
                     <div class="col-md-4 image-side">
-                        <div data-aos="fade-right">
+                        <div data-aos="fade-right" data-aos-duration="3000">
                             <a href="https://bongino.com/" target="_blank">
                                 <img src="img/bongino.png" class="img-fluid pb-3" alt="Image">
                             </a>
@@ -199,7 +201,7 @@
     
                     </div>
                     <div class="col-md-8">
-                        <div data-aos="fade-left">
+                        <div data-aos="fade-left" data-aos-duration="3000">
                             <a href="https://bongino.com/" target="_blank">
                                 <h2 class="text-dark site-title">Dan Bongino's Site</h2>
                             </a>
@@ -228,7 +230,7 @@
             <div class="site-item">
                 <div class="row pt-4 pb-4" style="overflow-x: hidden">
                     <div class="col-md-4 image-side">
-                        <div data-aos="fade-right">
+                        <div data-aos="fade-right" data-aos-duration="3000">
                             <a href="https://sucharski90.github.io/cigar-shop/" target="_blank">
                                 <img src="img/cigarshop.jpeg" class="img-fluid pb-3" alt="Image">
                             </a>
@@ -236,7 +238,7 @@
     
                     </div>
                     <div class="col-md-8">
-                        <div data-aos="fade-left">
+                        <div data-aos="fade-left" data-aos-duration="3000">
                             <a href="https://sucharski90.github.io/cigar-shop/" target="_blank">
                                 <h4 class="text-dark site-title">Cigar Shop</h4>
                             </a>
@@ -317,7 +319,7 @@
 
 
 
-    <footer class="bg-black pt-2 pb-5 text-white">
+    <footer class="bg-black py-5 text-white">
         <div class="container">
             <div class="row">
                 <div class="col">
@@ -342,6 +344,23 @@
         AOS.init();
     </script>
     <script src="main.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/vanta@0.5.24/dist/vanta.waves.min.js"></script>
+<script>
+VANTA.WAVES({
+  el: ".hero",
+  mouseControls: true,
+  touchControls: true,
+  gyroControls: false,
+  minHeight: 600.00,
+  minWidth: 200.00,
+  scale: 1.00,
+  scaleMobile: 1.00,
+  color: 0x280913,
+  shininess: 124.00,
+  waveHeight: 10.50,
+  waveSpeed: 0.20
+})
+</script>
 </body>
 </html>
