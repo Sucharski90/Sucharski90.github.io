@@ -42,6 +42,10 @@ section.hero {
   -ms-flex-align: center;
   align-items: center;
 }
+p#hero-copy {
+    font-size: 21px;
+    line-height: 28px;
+}
 .skills{
     font-family: 'Roboto Mono', monospace;
 }
