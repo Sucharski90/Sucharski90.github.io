@@ -97,7 +97,7 @@ a.nav-link {
     color: var(--white) !important;
 }
 .photo-of-me {
-    border-radius: 330px;
+    border-radius: 330px 330px 0px;
     
 }
 .photo-side {
