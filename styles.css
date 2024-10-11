@@ -240,7 +240,9 @@ i.fa-solid.fa-bars {
      transform: translate(0px);
     }
    }
-   
+   img.card-img-top {
+    height: 240px;
+}
 @media only screen and (max-width: 767px) {
     a.nav-link {
         color: #2c272a !important;
